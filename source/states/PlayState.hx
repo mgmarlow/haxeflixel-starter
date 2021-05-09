@@ -12,5 +12,7 @@ class PlayState extends FlxState {
 		if (FlxG.keys.justPressed.ESCAPE) {
 			openSubState(new PauseSubState());
 		}
+		
+		super.update(elapsed);
 	}
 }
